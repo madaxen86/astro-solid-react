@@ -1,4 +1,5 @@
 ---
+import ReactLayout from '../layouts/Layout';
 import Layout from '../layouts/Layout.astro';
 import ReactButton from './../react/button.tsx';
 import SolidButton from './../solid/button.tsx';
@@ -8,8 +9,9 @@ import SolidButton from './../solid/button.tsx';
 ---
 
 <Layout>
-
-		<ReactButton client:only="react" />
-		<SolidButton client:only="solid-js" />
-
+<ReactLayout>
+	<ReactButton client:only="react" />
+	<SolidButton client:only="solid-js" />
+</ReactLayout>
+	
 </Layout>

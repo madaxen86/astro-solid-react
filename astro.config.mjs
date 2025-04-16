@@ -12,7 +12,8 @@ export default defineConfig({
       include: ["**/*/solid/*"],
     }),
     react({
-      include: ["**/*/react/*"],
+      // include: ["**/*/react/*"],
+      exclude: ["**/*/solid/*"],
     }),
   ],
 });
