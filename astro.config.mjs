@@ -10,7 +10,6 @@ export default defineConfig({
   integrations: [
     solidJs({
       include: ["**/*/solid/*"],
-      exclude: ["**/*/react/*"],
     }),
     react({
       include: ["**/*/react/*"],
